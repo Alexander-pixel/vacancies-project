@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "VacanciesProject/1.0.0": {
+        "dependencies": {
+          "Employee": "1.0.0"
+        },
+        "runtime": {
+          "VacanciesProject.dll": {}
+        }
+      },
+      "Employee/1.0.0": {
+        "runtime": {
+          "Employee.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VacanciesProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Employee/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

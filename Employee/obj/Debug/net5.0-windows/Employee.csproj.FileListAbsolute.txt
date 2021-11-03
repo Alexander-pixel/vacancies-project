@@ -1,0 +1,12 @@
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\bin\Debug\net5.0-windows\Employee.deps.json
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\bin\Debug\net5.0-windows\Employee.dll
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\bin\Debug\net5.0-windows\ref\Employee.dll
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\bin\Debug\net5.0-windows\Employee.pdb
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\obj\Debug\net5.0-windows\Employee.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\obj\Debug\net5.0-windows\Employee.AssemblyInfoInputs.cache
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\obj\Debug\net5.0-windows\Employee.AssemblyInfo.cs
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\obj\Debug\net5.0-windows\Employee.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\obj\Debug\net5.0-windows\Employee.dll
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\obj\Debug\net5.0-windows\ref\Employee.dll
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\obj\Debug\net5.0-windows\Employee.pdb
+C:\Users\Alexander\OneDrive\Робочий стіл\Шаг\WPF\VacanciesProject\Employee\obj\Debug\net5.0-windows\Employee.csproj.AssemblyReference.cache

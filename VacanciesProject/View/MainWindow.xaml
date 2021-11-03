@@ -1,0 +1,54 @@
+﻿<Window x:Class="VacanciesProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VacanciesProject"
+        mc:Ignorable="d"
+        xmlns:l="clr-namespace:VacanciesProject.Infrastructure"
+        Title="MainWindow" Height="450" Width="600">
+
+    <Window.Resources>
+        <l:DateToAgeConverter x:Key="DTConverter"></l:DateToAgeConverter>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="0.9*"></RowDefinition>
+                <RowDefinition Height="0.1*"></RowDefinition>
+            </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListView x:Name="employeesListView" ItemsSource="{Binding Sorted}" Grid.ColumnSpan="3">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="150"  DisplayMemberBinding="{Binding FirstName}">
+                        <GridViewColumnHeader Name="firstName" Tag="FirstName" Command="{Binding SortedCommand}" CommandParameter="{Binding ElementName=firstName}">First Name</GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn Width="150" DisplayMemberBinding="{Binding LastName}">
+                        <GridViewColumnHeader Name="lastName" Tag="LastName" Command="{Binding SortedCommand}" CommandParameter="{Binding ElementName=lastName}">Last Name</GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn Width="150" DisplayMemberBinding="{Binding BirthDate, Converter={StaticResource DTConverter}}">
+                        <GridViewColumnHeader Name="birthDate" Tag="BirthDate" Command="{Binding SortedCommand}" CommandParameter="{Binding ElementName=birthDate}">Birth date</GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn Width="150" DisplayMemberBinding="{Binding Position}">
+                        <GridViewColumnHeader Name="position" Tag="Position" Command="{Binding SortedCommand}" CommandParameter="{Binding ElementName=position}">Position</GridViewColumnHeader>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button Grid.Row="1" Grid.Column="0" FontSize="20" Margin="5" Command="{Binding OpenAddWindowCommand}">Add employee</Button>
+        <Button Grid.Row="1" Grid.Column="1" FontSize="20" Margin="5" Command="{Binding RemoveEmployeeCommand}" CommandParameter="{Binding ElementName=employeesListView}">Remove employee</Button>
+        <Button Grid.Row="1" Grid.Column="2" FontSize="20" Margin="5" Command="{Binding ChangePositionCommand}" CommandParameter="{Binding ElementName=employeesListView}">Change position</Button>
+
+
+    </Grid>
+
+
+</Window>
